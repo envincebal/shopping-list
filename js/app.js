@@ -2,10 +2,11 @@ $(document).ready(function(){
 	/* Adds item by pressing "Enter" or clicking "Add Itme" */
 	$("#entryForm").submit(function(event){
 		if ($("#entry").val().length == 0){
-			$(".alert").html("Type something in the field");
+			$(".alert").html("Type something in the field").show();
 		}else{
 			$('ul').prepend('<li><input type="checkbox" class="checkbox">' + $("#entry").val() + '<div class="minus"><i class="fa fa-minus"></i></div></li>');
 			$('#entry').val("");
+			$(".alert").hide();
 		};
 		return false;
 	});

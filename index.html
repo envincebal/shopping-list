@@ -14,10 +14,13 @@
 		<div class="box">
 			<div class="title">
 				<h1>Shopping List</h1>
+				<p class="alert">Alert goes here</p>
 			</div>
-			<input id="entry" placeholder="Enter Item">
-			<button id="add-item">Add Item</button>
-			<button id="clear-checked">Clear Checked</button>
+			<form id="entryForm">
+				<input id="entry" placeholder="Enter Item">
+				<input type="submit" id="add-item" value="Add Item">
+				<input type="button" id="clear-checked" value="Clear Checked">
+			</form>
 			<ul class="item-list">
 				<li>
 					<input type="checkbox" class="checkbox">

@@ -1,13 +1,29 @@
-*{
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
 	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
+
 body{
-	background-image: url("../images/fridge.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: top center;
+	background-color: #51C8F0;
 	font-family: 'Raleway';
 	margin: 0;
+	box-sizing: border-box;
 }
 
 .container{
@@ -15,49 +31,64 @@ body{
 }
 
 .box{
-	min-height: 400px;
-	width: 700px;
+	min-height: 100px;
+	max-width: 500px;
 	background-color: white;
-	border: 5px solid gray;
 	margin: 0 auto;
 	margin-top: 4%;
 }
 
 .title{
-	background-color: gray;
+	background-color: #1A12B3;
 	text-align: center;
+	color: #FFF;
 }
-	.alert{
-		background-color: rgba(255,0,0,0.5);
-		padding: 15px;
-		text-align: center;
-		color: white;
-		display: none;
-	}
+
+.title h1{
+	font-size: 50px;
+}
+
+.alert{
+	background-color: #cd201f;
+	padding: 15px;
+	text-align: center;
+	color: white;
+	display: none;
+}
+
 
 #entry{
 	font-size: 25px;
-	margin: 50px 0 0 50px;
-	width: 60%;
-	border: 2px solid;
-	border-radius: 10px; 
+	margin: 0 0 1px 0;
+	border: 1px solid rgba(0,0,0,0);
+}
+
+#add-item{
+	padding: 0;
+	margin: 0;
+	display: inline-block;
+}
+
+#clear-checked{
+	margin: 0;
+	padding: 0;
+	display: inline-block;
 }
 
 .item-list{
-	margin-top: 30px;
+	/* margin-top: 30px; */
 	list-style: none;
 }
 
 .item-list li{
-	background-color: #B8B8B8;
+	background-color: white;
 	color: #000;
 	font-size: 25px;
 	font-weight: 800;
-	margin-bottom: 10px;
-	width: 80%;
+	/* margin-bottom: 10px; */
 	padding: 5px 0 5px 5px;
 	cursor: pointer;
-	border: 2px solid black;
+	border-top: 1px solid #000;
 }
 
 .minus{

@@ -20,14 +20,8 @@ time, mark, audio, video {
 }
 
 body{
-<<<<<<< HEAD
-	background-color: #51C8F0;
-	font-family: 'Raleway';
-	margin: 0;
-=======
 	background-color: #07173D;
 	font-family: 'Raleway';
->>>>>>> master
 	box-sizing: border-box;
 }
 
@@ -36,28 +30,13 @@ body{
 }
 
 .box{
-<<<<<<< HEAD
-	min-height: 100px;
-	max-width: 500px;
-	background-color: white;
-=======
 	min-height: 50px;
 	width: 440px;
->>>>>>> master
 	margin: 0 auto;
 	margin-top: 7%;
 }
 
 .title{
-<<<<<<< HEAD
-	background-color: #1A12B3;
-	text-align: center;
-	color: #FFF;
-}
-
-.title h1{
-	font-size: 50px;
-=======
 	background-color: #2F4474;
 	color: #FFF;
 	font-size: 25px;
@@ -89,7 +68,6 @@ body{
 
 .instructions h3{
 	text-transform: uppercase;
->>>>>>> master
 }
 
 .alert{
@@ -99,30 +77,6 @@ body{
 	color: white;
 	display: none;
 }
-<<<<<<< HEAD
-
-
-#entry{
-	font-size: 25px;
-	margin: 0 0 1px 0;
-	border: 1px solid rgba(0,0,0,0);
-}
-
-#add-item{
-	padding: 0;
-	margin: 0;
-	display: inline-block;
-}
-
-#clear-checked{
-	margin: 0;
-	padding: 0;
-	display: inline-block;
-}
-
-.item-list{
-	/* margin-top: 30px; */
-=======
 
 #entry{
 	font-size: 20px;
@@ -139,28 +93,10 @@ body{
 }
 
 .item-list{
->>>>>>> master
 	list-style: none;
 }
 
 .item-list li{
-<<<<<<< HEAD
-	background-color: white;
-	color: #000;
-	font-size: 25px;
-	font-weight: 800;
-	/* margin-bottom: 10px; */
-	padding: 5px 0 5px 5px;
-	cursor: pointer;
-	border-top: 1px solid #000;
-}
-
-.minus{
-	float: right;
-	color: red;
-	margin: 0 10px 0 0;
-	cursor: pointer;
-=======
 	background-color: #758DA9;
 	color: #000;
 	font-size: 25px;
@@ -169,7 +105,6 @@ body{
 	cursor: pointer;
 	border-top: 1px solid #000;
 	
->>>>>>> master
 }
 
 .checkbox{

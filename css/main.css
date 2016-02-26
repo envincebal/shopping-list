@@ -20,25 +20,36 @@ time, mark, audio, video {
 }
 
 body{
+<<<<<<< HEAD
 	background-color: #51C8F0;
 	font-family: 'Raleway';
 	margin: 0;
+=======
+	background-color: #07173D;
+	font-family: 'Raleway';
+>>>>>>> master
 	box-sizing: border-box;
 }
 
 .container{
-	height: 750px;
+	height: 700px;
 }
 
 .box{
+<<<<<<< HEAD
 	min-height: 100px;
 	max-width: 500px;
 	background-color: white;
+=======
+	min-height: 50px;
+	width: 440px;
+>>>>>>> master
 	margin: 0 auto;
-	margin-top: 4%;
+	margin-top: 7%;
 }
 
 .title{
+<<<<<<< HEAD
 	background-color: #1A12B3;
 	text-align: center;
 	color: #FFF;
@@ -46,6 +57,39 @@ body{
 
 .title h1{
 	font-size: 50px;
+=======
+	background-color: #2F4474;
+	color: #FFF;
+	font-size: 25px;
+}
+
+.title h1{
+	padding: 10px;
+	font-weight: 700;
+}
+
+.minus{
+	float: right;
+	color: red;
+	margin: 0 10px 0 0;
+	cursor: pointer;
+}
+
+.icon-plus{
+	float: right;
+	padding: 2px 10px 0 0;
+	cursor: pointer;
+}
+
+.instructions{
+	background-color: #629aa9;
+	font-size: 15px;
+	padding: 5px 0 5px 25px;
+}
+
+.instructions h3{
+	text-transform: uppercase;
+>>>>>>> master
 }
 
 .alert{
@@ -55,6 +99,7 @@ body{
 	color: white;
 	display: none;
 }
+<<<<<<< HEAD
 
 
 #entry{
@@ -77,10 +122,29 @@ body{
 
 .item-list{
 	/* margin-top: 30px; */
+=======
+
+#entry{
+	font-size: 20px;
+	margin: 0 0 1px 0;
+	border: 1px solid rgba(0,0,0,0);
+	width: 99.7%;
+}
+
+#add-item{
+	padding: 5.5px;
+	margin: 0px;
+	float: right;
+	font-family: 'Raleway';
+}
+
+.item-list{
+>>>>>>> master
 	list-style: none;
 }
 
 .item-list li{
+<<<<<<< HEAD
 	background-color: white;
 	color: #000;
 	font-size: 25px;
@@ -96,21 +160,54 @@ body{
 	color: red;
 	margin: 0 10px 0 0;
 	cursor: pointer;
+=======
+	background-color: #758DA9;
+	color: #000;
+	font-size: 25px;
+	font-weight: 800;
+	padding: 5px 0 5px 5px;
+	cursor: pointer;
+	border-top: 1px solid #000;
+	
+>>>>>>> master
 }
 
 .checkbox{
-	float: left;
+	float: right;
 	margin: 5px 5px 0 0;
 	width: 20px;
 	height: 20px;
 	cursor: pointer;
-
 }
+
+#clear-checked{
+	margin-top: 40px;
+	/* margin-left: 35%;
+	font-size: 20px; */
+	width: 100%;
+	color: #FFF;
+	font-size: 30px;
+	background-color: #ff0000;
+}
+
 
 .strike{
 	text-decoration: line-through;
 }
 
-.delete{
-	display: none;
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 480px){
+	.box{
+		width: 100%;
+	}
+
+	#clear-checked{
+		padding: 20px 0;
+	}
+
+	.item-list li{
+		font-size: 40px;
+	}
+
 }

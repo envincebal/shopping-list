@@ -10,43 +10,43 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
-
 		<div class="box">
 			<div class="title">
-				<h1>Shopping List<i class="icon-plus"></i></h1>
+				<h1>Shopping List<i class="icon-plus"></i><i class="icon-remove"></i></h1>
 				<div class="instructions">
 					<h3>Instructions</h3>
-					<ul>
+					<ol>
 						<li>Click and drag items to rearrange them.</li>
-						<li>Click the cross icon to close these instructions.</li>
+						<li>Click the "x" icon to close these instructions.</li>
 						<li>Click the "Clear Checked" button to delete checked items.</li>
-					</ul>
+					</ol>
 				</div>
 				<p class="alert">Alert goes here</p>
 			</div>
 			<form id="entryForm">
-				<input id="entry" placeholder="Type item and press Enter" maxlength="50">
+				<input id="entry" placeholder="Type item" maxlength="50">
+				<input type="submit" id="add-item" value="Add Item"></input>
 			</form>
 			<ul class="item-list">
 				<li>
 					<input type="checkbox" class="checkbox">
 					Milk
 					<div class="minus">
-						<i class="icon-remove"></i>
+						<i class="icon-trash"></i>
 					</div>
 				</li>
 				<li>
 					<input type="checkbox" class="checkbox">
 					Cereal
 					<div class="minus">
-						<i class="icon-remove"></i>
+						<i class="icon-trash"></i>
 					</div>
 				</li>
 				<li>
 					<input type="checkbox" class="checkbox">
 					Vegetables
 					<div class="minus">
-						<i class="icon-remove"></i>
+						<i class="icon-trash"></i>
 					</div>
 				</li>
 			</ul>

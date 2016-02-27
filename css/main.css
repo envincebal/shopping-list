@@ -79,6 +79,8 @@ body{
 
 .instructions h3{
 	text-transform: uppercase;
+	text-align: center;
+	text-decoration: underline;
 }
 
 .alert{
@@ -104,7 +106,6 @@ body{
 
 #add-item{
 	width: 25%;
-	font-family: 'Raleway';
 	border: none;
 	display: inline-block;
 	height: 100%;
@@ -139,6 +140,7 @@ body{
 	width: 100%;
 	color: #FFF;
 	font-size: 30px;
+	border: none;
 	background-color: #ff0000;
 }
 
@@ -164,6 +166,10 @@ body{
 
 	#clear-checked{
 		padding: 20px 0;
+	}
+
+	#entryForm{
+		height: 60px;
 	}
 
 	#entry{
@@ -209,9 +215,7 @@ body{
 		display: none;
 	}
 
-	#entryForm{
-		height: 60px;
-	}
+	
 
 	.item-list li{
 		font-size: 20px;
@@ -221,4 +225,11 @@ body{
 		margin-top: -7px;
 	}
 
+}
+
+@media only screen and (max-width: 545px){
+	.alert{
+		font-size: 20px;
 	}
+
+}

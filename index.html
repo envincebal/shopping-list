@@ -12,20 +12,20 @@
 <body>
 		<div class="box">
 			<div class="title">
-				<h1>Shopping List<i class="icon-plus"></i><i class="icon-remove"></i></h1>
+				<h1>Shopping List<i class="icon-plus"></i><!-- <i class="icon-remove"></i> --></h1>
 				<div class="instructions">
 					<h3>Instructions</h3>
 					<ol>
 						<li>Click and drag items to rearrange them.</li>
-						<li>Click the "x" icon to close these instructions.</li>
+						<li>Click the "+" icon to toggle instructions.</li>
 						<li>Click the "Clear Checked" button to delete checked items.</li>
 					</ol>
 				</div>
 				<p class="alert">Alert goes here</p>
 			</div>
-			<form id="entryForm">
-				<input id="entry" placeholder="Type item" maxlength="50">
-				<input type="submit" id="add-item" value="Add Item"></input>
+			<form class="entryForm">
+				<input class="entry" placeholder="Type item" maxlength="50">
+				<input type="submit" class="add-item" value="Add Item"></input>
 			</form>
 			<ul class="item-list">
 				<li>
@@ -50,7 +50,7 @@
 					</div>
 				</li>
 			</ul>
-			<input type="button" id="clear-checked" value="Clear Checked">
+			<input type="button" class="clear-checked" value="Clear Checked">
 		</div>
 	</div>
 

@@ -1,31 +1,20 @@
 $(document).ready(function(){
 	/* Adds item by pressing "Enter" or clicking "Add Itme" */
-	$("#entryForm").submit(function(event){
-		if ($("#entry").val().length == 0){
+	$(".entryForm").submit(function(event){
+		var userInput = $(".entry").val();
+		if (userInput.length == 0){
 			$(".alert").html("Type something in the field").show();
 		}else{ 
-			var userInput = $("#entry").val();
 			$("ul").append("<li><input type=\"checkbox\" class=\"checkbox\">" + userInput + "<div class=\"minus\"><i class=\"icon-trash\"></i></div></li>");
-			$("#entry").val("");
+			$(".entry").val("");
 			$(".alert").hide();
 		};
 		return false;
 	});
 
-	/* Hides instructions */
-	$(".icon-remove").click(function(){
-		$(".instructions").slideUp(300);
-		$(this).fadeOut(100,function(){
-			$(".icon-plus").fadeIn(100);
-		});
-	});
-
-	/* Shows instructions */
+	/* Toggle instructions */
 	$(".icon-plus").click(function(){
-		$(".instructions").slideDown(300);
-		$(this).fadeOut(100,function(){
-			$(".icon-remove").fadeIn(100);
-		});
+		$(".instructions").slideToggle(300);
 	});
 
 	/* Crosses off item */
@@ -42,7 +31,7 @@ $(document).ready(function(){
 	});
 
 	/* Deletes all checked items */
-	$("#clear-checked").click(function(){
+	$(".clear-checked").click(function(){
 		$(".strike").fadeOut().remove();
 	});
 

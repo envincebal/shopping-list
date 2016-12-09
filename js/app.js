@@ -1,6 +1,7 @@
 $(document).ready(function(){
 	/* Adds item by pressing "Enter" or clicking "Add Itme" */
 	$(".entryForm").submit(function(event){
+		event.preventDefault();
 		var userInput = $(".entry").val();
 		if (userInput.length == 0){
 			$(".alert").html("Type something in the field").show();
@@ -9,7 +10,6 @@ $(document).ready(function(){
 			$(".entry").val("");
 			$(".alert").hide();
 		};
-		return false;
 	});
 
 	/* Toggle instructions */

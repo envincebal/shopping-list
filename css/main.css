@@ -62,14 +62,7 @@ body{
 	float: right;
 	padding: 2px 10px 0 0;
 	cursor: pointer;
-/* 	display: none; */
 }
-
-/* .icon-remove{
-	float: right;
-	padding: 2px 10px 0 0;
-	cursor: pointer;
-} */
 
 .instructions{
 	background-color: #629aa9;
@@ -98,7 +91,7 @@ body{
 .entry{
 	font-size: 22px;
 	margin: 0 0 1px 0;
-	width: 75%;
+	width: 100%;
 	border: none;
 	display: inline-block;
 	height: 100%;

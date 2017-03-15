@@ -3,10 +3,10 @@ $(document).ready(function(){
 	$(".entryForm").submit(function(event){
 		event.preventDefault();
 		var userInput = $(".entry").val();
-		if (userInput.length == 0){
+		if (userInput.length === 0){
 			$(".alert").html("Type something in the field").show();
 		}else{ 
-			$("ul").append("<li><input type=\"checkbox\" class=\"checkbox\">" + userInput + "<div class=\"minus\"><i class=\"icon-trash\"></i></div></li>");
+			$(".item-list").append("<li><input type=\"checkbox\" class=\"checkbox\">" + userInput + "<div class=\"minus\"><i class=\"icon-trash\"></i></div></li>");
 			$(".entry").val("");
 			$(".alert").hide();
 		};

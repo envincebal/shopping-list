@@ -49,7 +49,11 @@ body{
 .title h1{
 	padding: 10px;
 	font-weight: 700;
+<<<<<<< HEAD
 	letter-spacing: 2px;
+=======
+	letter-spacing: 3px;
+>>>>>>> master
 }
 
 .minus{
